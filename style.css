@@ -1,15 +1,17 @@
-/* body{
-    background-color: gray;
-} */
+
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0px;
+    height: 100%;
 }
 .wrapper{
+    height: 100%;
     display: -webkit-flex;
     border: 1px solid;
+    margin: 0px;
+    padding: 0px;
     
 }
 .sidebar{
@@ -19,20 +21,25 @@ body{
     float: left;
     border: 1px solid;
     padding: 5px;
+    transition-duration: 0.5s;
 }
+
 .main-content{
-    height: 46em;
+    height: 100%;   
     width: 100%;
-    background: url("bg.jpg") no-repeat;
-    background-size: cover;
     float: right;
 }
 
-
 .sidebar:hover{
     width: 350px;
-    /* transition-property: width; */
-    transition-duration: 1s;
+    transition: 0.5s ease-in-out;
+}
+.abc{
+    width: 100%;
+    height: 46em;
+}
+.sidebar:hover + .main-{
+    opacity: 0.5;
 }
 .img1{
     display: -webkit-flex;
@@ -41,22 +48,24 @@ body{
 }
 
 div[class="img1"] img{
-    width: 80px;
-    height: 50px;
+    width: 50px;
+    height: 30px;
     display: inline;
+    border: 0px solid;
+    margin-top: 15px;
 }
 div[class="img1"] p{
     display: inline;
 }
 .a{
-    margin-left: 7px;
+    margin-left: 25px;
     border: 0px solid; 
     font-size: 20px;
     visibility: hidden;
 }
 .sidebar:hover .a{
-    visibility: visible;
     transition-duration: 3s;
+    visibility: visible;
 }
 .img1:hover {
     background-color: gray;
